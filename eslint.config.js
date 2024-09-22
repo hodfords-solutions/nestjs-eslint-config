@@ -3,8 +3,9 @@ const tslint = require('typescript-eslint');
 const prettierConfig = require('eslint-plugin-prettier/recommended');
 
 const defaultConfigs = {
-    files: ['src/**/*.ts', 'lib/**/*.ts', 'test/**/*.ts', 'sample/**/*.ts']
+    files: ['src/**/*.ts', 'lib/**/*.ts', 'libs/**/*.ts', 'test/**/*.ts', 'sample/**/*.ts']
 };
+
 module.exports = [
     ...tslint.config({
         extends: [...tslint.configs.recommended],
