@@ -100,5 +100,12 @@ module.exports = [
             'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }]
         },
         ...defaultConfigs
+    },
+    {
+        'files': ['src/**/*.e2e-spec.ts'],
+        'rules': {
+            'max-lines': 'off',
+            'max-lines-per-function': 'off'
+        }
     }
 ];
