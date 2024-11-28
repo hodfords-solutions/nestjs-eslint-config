@@ -107,15 +107,5 @@ module.exports = [
             'max-lines': 'off',
             'max-lines-per-function': 'off'
         }
-    },
-    {
-        rules: {
-            "no-unused-vars": [
-                "error",
-                {
-                    caughtErrors: "none"
-                }
-            ],
-        }
     }
 ];
