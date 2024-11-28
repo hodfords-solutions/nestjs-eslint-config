@@ -107,5 +107,8 @@ module.exports = [
             'max-lines': 'off',
             'max-lines-per-function': 'off'
         }
+    },
+    {
+        ignores: ["**/dist/**"],
     }
 ];
