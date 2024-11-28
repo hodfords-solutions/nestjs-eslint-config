@@ -3,7 +3,7 @@ const tslint = require('typescript-eslint');
 const prettierConfig = require('eslint-plugin-prettier/recommended');
 
 const defaultConfigs = {
-    files: ['src/**/*.ts', 'lib/**/*.ts', 'libs/**/*.ts', 'test/**/*.ts', 'sample/**/*.ts']
+    files: ['src/**/*.ts', 'lib/**/*.ts', 'libs/**/*.ts', 'test/**/*.ts', 'sample/**/*.ts', 'apps/**/*.ts']
 };
 
 module.exports = [
@@ -52,7 +52,7 @@ module.exports = [
             '@typescript-eslint/explicit-module-boundary-types': 'off',
             '@typescript-eslint/no-explicit-any': 'off',
             '@typescript-eslint/no-inferrable-types': 'off',
-            '@typescript-eslint/no-unused-vars': ['error', { args: 'none' }]
+            '@typescript-eslint/no-unused-vars': ['error', { args: 'none' , caughtErrors: 'none' }]
         },
         ...defaultConfigs
     }),
@@ -106,6 +106,16 @@ module.exports = [
         'rules': {
             'max-lines': 'off',
             'max-lines-per-function': 'off'
+        }
+    },
+    {
+        rules: {
+            "no-unused-vars": [
+                "error",
+                {
+                    caughtErrors: "none"
+                }
+            ],
         }
     }
 ];
