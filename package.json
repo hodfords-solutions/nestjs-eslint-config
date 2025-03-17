@@ -1,6 +1,6 @@
 {
   "name": "@hodfords/nestjs-eslint-config",
-  "version": "11.0.0",
+  "version": "11.0.1",
   "description": "Eslint default configuration for Nestjs project. It will help you to maintain the code quality of your project.",
   "main": "eslint.config.js",
   "scripts": {
@@ -11,9 +11,9 @@
     "url": "https://github.com/hodfords-solutions/nestjs-eslint-config.git"
   },
   "dependencies": {
-    "@typescript-eslint/parser": "^8.23.0",
-    "eslint-config-prettier": "^10.0.1",
+    "@typescript-eslint/parser": "^8.26.1",
+    "eslint-config-prettier": "^10.1.1",
     "eslint-plugin-prettier": "^5.2.3",
-    "typescript-eslint": "^8.23.0"
+    "typescript-eslint": "^8.26.1"
   }
 }
